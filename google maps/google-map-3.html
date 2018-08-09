@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Api Google Map</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+    <style>
+      #googlemap {
+        height:80vh; width:100vw; background-color:#eee;
+      }
+    </style>
+
+</head>
+
+<body>
+  
+
+<div id="googlemap"></div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLccWtbiJNIJmG52cOvlW9JgOuOREtNgg"
+  type="text/javascript"></script>
+
+  <script>
+$(document).ready(function(){
+
+  
+      var map;
+      function initMap() {
+
+        /*
+        map = new google.maps.Map(document.getElementById('googlemap'), {
+          center: {lat: 33.738, lng: 73.084},
+          zoom: 8
+        });
+        */
+
+        // The location of islamabad
+        var islamabad = {lat: 33.738, lng: 73.084};
+        // The map, centered at islamabad
+        var map = new google.maps.Map(
+        document.getElementById('googlemap'), {zoom: 8, center: islamabad});
+        // The marker, positioned at islamabad
+        var marker = new google.maps.Marker({position: islamabad, map: map});
+
+      }
+
+      initMap();
+
+});
+  </script>
+
+</body>
+</html>
