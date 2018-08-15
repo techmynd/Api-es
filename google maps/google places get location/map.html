@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body, .container {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+<div class="container">
+
+    <div id="map"></div>
+    
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 31.55460609999999, lng: 74.35715809999999},
+          // zoom: 5 continent / 10 city / 15 streets / 20 buildings
+          zoom: 10
+        });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeTiA0pbz2lpAT8afVP1uiO7etc2gKcYw&callback=initMap" async defer></script>
+    
+    <!-- 
+    Enable apis from Google Maps APIs not just one but 
+    Google Maps Roads API
+    Google Static Maps API
+    Google Street View Image API
+    Google Maps Embed API
+    Google Places API Web Service 
+    Google Maps Geocoding API
+    Google Maps Directions API
+    Google Maps Distance Matrix API
+    Google Maps Geolocation API 
+    and even more if you have to for mobiles and more
+    -->
+
+</div>
+
+
+  </body>
+</html>

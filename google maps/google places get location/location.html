@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Maps</title>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<br><br>
+<div class="container">
+
+    <label>Enter Location, City, Country, Postcode</label>
+    <input type="text" name="new_Location" id="search_text_location" class="new_Location form-control" placeholder="City">
+    <br>
+    <label>Latitude</label>
+    <input id="cityLat" name="cityLat" class="form-control">
+    <br>
+    <label>Longitude</label>
+    <input id="cityLng" name="cityLng" class="form-control">
+
+
+<br><br>
+
+Validate Autocomplete<br>
+<textarea rows="5" class="form-control">
+http://stackoverflow.com/questions/14272594/how-to-tell-when-google-places-autocomplete-suggestion-was-not-used
+http://jsfiddle.net/robertdodd/FSRd8/7/
+http://stackoverflow.com/questions/14652507/google-places-autocomplete-force-selection
+</textarea>
+
+
+
+</div>
+<br><br>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBeTiA0pbz2lpAT8afVP1uiO7etc2gKcYw&libraries=places" type="text/javascript"></script>
+
+    <!-- 
+    Enable apis from Google Maps APIs not just one but 
+    Google Maps Roads API
+    Google Static Maps API
+    Google Street View Image API
+    Google Maps Embed API
+    Google Places API Web Service 
+    Google Maps Geocoding API
+    Google Maps Directions API
+    Google Maps Distance Matrix API
+    Google Maps Geolocation API 
+    and even more if you have to for mobiles and more
+    -->
+
+<script type="text/javascript">
+    function initialize() {
+        var input = document.getElementById('search_text_location');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+        google.maps.event.addListener(autocomplete, 'place_changed', function () {
+            var place = autocomplete.getPlace();
+            // document.getElementById('search_text_location').value = place.name;
+            document.getElementById('cityLat').value = place.geometry.location.lat();
+            document.getElementById('cityLng').value = place.geometry.location.lng();
+            //alert("This function is working!");
+            //alert(place.name);
+           // alert(place.address_components[0].long_name);
+
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize); 
+</script>
+
+  </body>
+</html>
+
