@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jQuery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<style>
+ .data-container {
+  color: #999;
+ }
+ .data-container span {
+  color: #000; 
+  font-weight: bold;
+ }
+</style>
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Today's and Yesterday's Horoscope</h3>
+        
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+$(document).ready(function(){
+
+  $.ajax({
+   type:'POST',
+   url:'https://aztro.sameerkumar.website?sign=sagittarius&day=today',
+   
+   success:function(data){
+    
+    $('.data-date').text(data.current_date);
+    $('.data-compatible').text(data.compatibility);
+
+    $('.data-number').text(data.lucky_number);
+    $('.data-time').text(data.lucky_time);
+    $('.data-mood').text(data.mood);
+    $('.data-color').text(data.color);
+
+    $('.data-description').text(data.description);
+    
+    // console.log(data);
+
+   }
+  
+});
+</script>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <h3>Sagittarius Horoscope for Today</h3>
+        
+        <div class="data-container">
+        Today: <span class="data-date"></span><br>
+        Today's Compatibility: <span class="data-compatible"></span><br>
+        Today's Lucky Number: <span class="data-number"></span><br>
+        Today's Lucky Time: <span class="data-time"></span><br>
+        Today's Mood: <span class="data-mood"></span><br>
+        Today's Color: <span class="data-color"></span><br>
+        Today's Horoscope: <span class="data-description"></span><br>
+        </div>
+
+        <br><br>
+
+        <div class="data-container">
+        Yesterday: <span class="data-date2"></span><br>
+        Yesterday's Compatibility: <span class="data-compatible2"></span><br>
+        Yesterday's Lucky Number: <span class="data-number2"></span><br>
+        Yesterday's Lucky Time: <span class="data-time2"></span><br>
+        Yesterday's Mood: <span class="data-mood2"></span><br>
+        Yesterday's Color: <span class="data-color2"></span><br>
+        Yesterday's Horoscope: <span class="data-description2"></span><br>
+        </div>
+          
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  $.ajax({
+     type:'POST',
+     url:'https://aztro.sameerkumar.website?sign=sagittarius&day=today',
+     success:function(data){
+      
+      $('.data-date').text(data.current_date);
+      $('.data-compatible').text(data.compatibility);
+
+      $('.data-number').text(data.lucky_number);
+      $('.data-time').text(data.lucky_time);
+      $('.data-mood').text(data.mood);
+      $('.data-color').text(data.color);
+
+      $('.data-description').text(data.description);
+      
+      // console.log(data);
+
+     }
+  });
+
+
+
+
+  $.ajax({
+     type:'POST',
+     url:'https://aztro.sameerkumar.website?sign=sagittarius&day=yesterday',
+     success:function(data2){
+      
+      $('.data-date2').text(data2.current_date);
+      $('.data-compatible2').text(data2.compatibility);
+
+      $('.data-number2').text(data2.lucky_number);
+      $('.data-time2').text(data2.lucky_time);
+      $('.data-mood2').text(data2.mood);
+      $('.data-color2').text(data2.color);
+
+      $('.data-description2').text(data2.description);
+      
+      // console.log(data2);
+
+     }
+  });
+
+
+  
+});
+  </script>
+
+</body>
+</html>
