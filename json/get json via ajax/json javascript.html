@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>json</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Json Data from .json file via vanilla javascript</h3>
+        <p>Needs a server</p>
+        
+        <br>
+        <br>
+
+        <textarea class="form-control" rows="10">
+<script>
+    function fetchJSONFile(path, callback) {
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function() {
+            if (httpRequest.readyState === 4) {
+                if (httpRequest.status === 200) {
+                    var data = JSON.parse(httpRequest.responseText);
+                    if (callback) callback(data);
+                }
+            }
+        };
+        httpRequest.open('GET', path);
+        httpRequest.send(); 
+    }
+
+    // this requests the file and executes a callback with the parsed result once
+    //   it is available
+    fetchJSONFile('mydata.json', function(data){
+        // do something with your data
+        console.log(data);
+    });
+</script>
+        </textarea>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <h3>Results</h3>
+        
+        See console
+
+        <br><br>
+
+          
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+ 
+  
+
+  <script>
+
+    function fetchJSONFile(path, callback) {
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = function() {
+            if (httpRequest.readyState === 4) {
+                if (httpRequest.status === 200) {
+                    var data = JSON.parse(httpRequest.responseText);
+                    if (callback) callback(data);
+                }
+            }
+        };
+        httpRequest.open('GET', path);
+        httpRequest.send(); 
+    }
+
+    // this requests the file and executes a callback with the parsed result once
+    //   it is available
+    fetchJSONFile('mydata.json', function(data){
+        // do something with your data
+        console.log(data);
+    });
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+Javascript Object Notation
+==========================
+
+json is subset of javascript
+
+var jsObject = { first:"John", last: "Smith" };
+
+json methods
+=============
+
+var jsonString = JSON.stringify(jsObject);
+var jsonString = JSON.parse(jsObject);
+
+
+
+https://stackoverflow.com/questions/14388452/how-do-i-load-a-json-object-from-a-file-with-ajax
+https://www.sitepoint.com/ajaxjquery-getjson-simple-example/
+https://api.jquery.com/jquery.getjson/
+
+
+
