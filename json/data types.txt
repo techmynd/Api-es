@@ -1,0 +1,27 @@
+{"firstName": "John", "lastName": "Smith", "age": 23, "isMarried": false }
+
+above example uses following data types 
+
+string data
+number
+booloean data
+
+"" in json // escaping
+======================
+
+"Comment": "Ahsan asked, \"What is your name\""
+
+{"firstName": "John", "Comment": "Ahsan asked, \"What is your name\"", "age": 23 }
+
+
+Other data types // null, array, objects
+========================================
+
+{"firstName": "John", "age": 23, "isMarried": false, "Hobbies": null }
+
+{"Holidays": ["Saturday", "Sunday"], "numberarrays": [5,10,15], "Passed": [true, false, true] }
+
+{"arayOfArrays": [ [2,3,5,6],[true,false,true],[4,8,10] ] }
+
+{"arayOfObjects": [ {"name":"john smith", "id": 500}, {"Department": "Accounts", "Branch": "branchname"} ] }
+

@@ -1,0 +1,25 @@
+Object
+======
+
+var person = new Object();
+person.firstName = "John";
+person.lastName = "Smith";
+alert(person.firstName + " " + person.lastName);
+
+Javascript Object Literals
+==========================
+
+var person = { firstName: "John", lastName: "Smith" };
+
+or
+
+var person = { "firstName": "John", "lastName": "Smith" };
+
+
+
+JSON Data or JSON string //
+// not json object // there is no json object
+=======================================================
+
+var person = '{ "firstName": "John", "lastName": "Smith" }';
+
