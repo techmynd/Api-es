@@ -1,0 +1,7 @@
+in case of number as key name
+
+use person.["1"].firstName
+
+person.1.firstName
+won't work
+

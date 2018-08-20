@@ -11,6 +11,15 @@ json methods
 var jsonString = JSON.stringify(jsObject);
 var jsonString = JSON.parse(jsObject);
 
+access
+
+>> jsonString.firstName
+or
+>> jsonString.person.firstName
+or
+>> jsonString["firstName"]
+or
+>> jsonString["person"]["firstName"]
 
 
 https://stackoverflow.com/questions/14388452/how-do-i-load-a-json-object-from-a-file-with-ajax
