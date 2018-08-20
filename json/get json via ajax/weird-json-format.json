@@ -1,0 +1,7 @@
+{"person":
+	{
+		"1":{"firstName": "John", "lastName": "Smith", "interests": ["reading", "games", "music"]},
+		"2":{"firstName": "Kevin", "lastName": "Turner", "interests": null},
+		"3":{"firstName": "Anna", "lastName": "White", "interests": ["music"]}
+	}
+}

@@ -50,7 +50,8 @@
     //   it is available
     fetchJSONFile('mydata.json', function(data){
         // do something with your data
-        console.log(data);
+        console.log(data.person[0].firstName);
+        console.log(data.person[1].fname);
     });
 </script>
         </textarea>
@@ -70,6 +71,8 @@
         <h3>Results</h3>
         
         See console
+
+
 
         <br><br>
 
@@ -103,7 +106,8 @@
     //   it is available
     fetchJSONFile('mydata.json', function(data){
         // do something with your data
-        console.log(data);
+        console.log(data.person[0].firstName);
+        console.log(data.person[1].fname);
     });
 
   </script>
