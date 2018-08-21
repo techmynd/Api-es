@@ -8,6 +8,12 @@ https://www.programmableweb.com/apis/directory
 
 
 
+weather
+https://openweathermap.org/
+
+sunrise sunset
+https://sunrise-sunset.org/api
+
 
 
 
