@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>API</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<style>
+ 
+</style>
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3>Currency Rates</h3>
+        
+        <br>
+        <br>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        1EUR = <span class="data-AUD"></span> AUD <br>
+        1EUR = <span class="data-USD"></span> USD <br>
+        1EUR = <span class="data-CAD"></span> CAD <br><br>
+
+        Free api does not allow base currency - see console
+
+        <br><br>
+
+        <div class="all-data"></div>
+          
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+$(document).ready(function(){
+  
+  $.ajax({
+     type:'POST',
+     url:'http://data.fixer.io/api/latest?access_key=cda2e8da95c6d7a212edf41f37ceaae6&format=1',
+     success:function(data){
+      
+       $('.data-AUD').text(data.rates.AUD);
+       $('.data-CAD').text(data.rates.CAD);
+       $('.data-USD').text(data.rates.USD);
+
+       $.each(data, function () {
+         $.each(this, function (name, value) {
+            $('.all-data').append(name + '=' + value + '<br>');
+         });
+      });
+      
+      console.log(data);
+
+     }
+  });
+  
+});
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>019-source-code-accessdata.html</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <pre>&lt;!DOCTYPE html&gt;<br>&lt;html lang="en"&gt;<br>&lt;head&gt;<br>    &lt;title&gt;Collect the Required Data&lt;/title&gt;<br>    &lt;script&gt;<br>         //var jsonData = '{"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":701,"main":"Mist","description":"mist","icon":"50n"},{"id":500,"main":"Rain","description":"light rain","icon":"10n"}],"base":"stations","main":{"temp":272.14,"pressure":1016,"humidity":74,"temp_min":269.15,"temp_max":275.15},"visibility":10000,"wind":{"speed":2.6,"deg":230},"clouds":{"all":36},"dt":1456379732,"sys":{"type":1,"id":5091,"message":0.0172,"country":"GB","sunrise":1456383302,"sunset":1456421582},"id":2643743,"name":"London","cod":200}';<br>         var jsonData = '{"person":{"first":"Anna Smith", "second": "Kevin Turner"}}';<br>         var jsObject = JSON.parse(jsonData);<br>         var x = "first";<br>         document.write(jsObject.person[x]);<br> <br>         /*document.write("&lt;b&gt; Weather Information for " + jsObject["name"] + "&lt;/b&gt;&lt;br /&gt;");<br>         document.write("Temperature: " + jsObject["main"]["temp"] + "&lt;br /&gt;");<br>         document.write("Pressure: " + jsObject.main.pressure + "&lt;br /&gt;");<br>         document.write("Wind Speed: " + jsObject.wind.speed + "&lt;br /&gt;");*/<br>    &lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;
+</pre>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

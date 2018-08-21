@@ -1,0 +1,17 @@
+https://www.reddit.com/dev/api/#GET_api_v1_me
+https://gist.github.com/igustafson/675e4b581ea713c78f4d
+https://speckyboy.com/building-simple-reddit-api-webapp-using-jquery/
+https://stackoverflow.com/questions/8191105/how-to-extract-url-data-from-reddit-api-using-json
+
+
+
+
+
+
+
+
+
+
+
+
+

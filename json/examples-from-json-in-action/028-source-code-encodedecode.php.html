@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>028-source-code-encodedecode.php</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <pre>&lt;?php<br>$names = array("John", "Kevin", "Anna", "Aaron");<br>$address = array("name"=&gt; "John Smith", "age"=&gt;35, "married"=&gt; true);<br>echo json_encode($address);
+$jsonString = '{"name":"John Smith","age":35,"married":true}';<br>$phpArr = json_decode($jsonString);<br>echo $phpArr["name"];<br>?&gt;
+</pre>
+
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

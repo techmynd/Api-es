@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>024-source-code-getapiresponse.html</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <pre class="prettyprint linenums">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;Get JSON Response from API&lt;/title&gt;
+    &lt;script&gt;
+ function collectJSON()
+ {
+ var xmlhttp = new XMLHttpRequest();
+ var url = "http://api.openweathermap.org/data/2.5/weather?lat=";
+ var latitude = 35;
+ var longitude = 139;
+ // go to openweathermap site and if you click Price menu, you will be redirected to a page where you can get an API key for free once you sign up. Use that key instead of USE-YOUR-KEY
+ var key = "USE-YOUR-KEY"; 
+ url += latitude + "&amp;lon=" + longitude + "&amp;appid=" + key;
+ xmlhttp.open("GET", url, false);
+ xmlhttp.send();
+ if (xmlhttp.readyState == 4 &amp;&amp; xmlhttp.status == 200)
+ {
+ var result = xmlhttp.responseText;
+ //var jsResult = JSON.parse(result);
+ document.getElementById("show").innerHTML = result;
+ }
+ }
+    &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;button id="btnClick" onclick="collectJSON();"&gt;Collect&lt;/button&gt;
+ &lt;div id="show"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>022-source-code-getdata.html</title>
+</head>
+<body>
+<div class="asset-container">
+    <div class="asset-container__padding article-view">
+        <div class="w3c-default">
+            <pre>&lt;!doctype html&gt;<br>
+&lt;html lang="en"&gt;<br>&lt;head&gt;<br>    &lt;title&gt;Get JSON from Server&lt;/title&gt;<br>    &lt;script&gt;<br>         function collectJSON()<br>         {<br>             var xmlhttp = new XMLHttpRequest();<br>             xmlhttp.open("GET", "http://localhost/server/write-json-complex.json", false);<br>             xmlhttp.send();<br>             if (xmlhttp.readyState == 4 &amp;&amp; xmlhttp.status == 200)<br>             {<br>                 var result = xmlhttp.responseText;<br>                 document.getElementById("show").innerHTML = result;<br>             }<br>         }<br>    &lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>     &lt;button id="btnClick" onclick="collectJSON();"&gt;Collect&lt;/button&gt;<br>     &lt;div id="show"&gt;&lt;/div&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</pre>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+https://fixer.io/documentation
+free plan does not allow to set base currency
