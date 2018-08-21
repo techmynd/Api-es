@@ -1,0 +1,14 @@
+Javascript Object Notation
+==========================
+json is subset of javascript
+
+var jsObject = { first:"John", last: "Smith" };
+
+json methods
+=============
+
+var string = JSON.stringify(obj);
+var obj = JSON.parse(string);
+
+
+
