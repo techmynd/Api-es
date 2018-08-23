@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>JSON</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<style>
+ 
+</style>
+
+</head>
+
+<body>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>JSON Data For Loop</h3>
+        
+<br><br>
+
+<textarea style="width: 100%;" rows="8">
+<script>
+var myObj = {
+"friends": [{
+    "firstName": "Mike"
+    , "lastName": "Jones"
+},{
+    "firstName": "John"
+    , "lastName": "Smith"
+} ,{
+    "firstName": "Laurence"
+    , "lastName": "Svekis"
+},{
+    "firstName": "Alice"
+    , "lastName": "James"
+}]
+}
+
+var users = myObj.friends;
+var html = '';
+for(x = 0; x < myObj.friends.length; x++){
+html += (Number(x)+1) + ' . ' + users[x].firstName + ' ' + users[x].lastName + '<br>'
+}
+document.getElementById('output').innerHTML = html;    
+</script>
+</textarea>
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        
+        <h3>Result</h3>
+
+        <div id="output"></div>
+        
+<script>
+var myObj = {
+"friends": [{
+    "firstName": "Mike"
+    , "lastName": "Jones"
+},{
+    "firstName": "John"
+    , "lastName": "Smith"
+} ,{
+    "firstName": "Laurence"
+    , "lastName": "Svekis"
+},{
+    "firstName": "Alice"
+    , "lastName": "James"
+}]
+}
+
+var users = myObj.friends;
+var html = '';
+for(x = 0; x < myObj.friends.length; x++){
+html += (Number(x)+1) + ' . ' + users[x].firstName + ' ' + users[x].lastName + '<br>'
+}
+document.getElementById('output').innerHTML = html;        
+</script>
+          
+      </div>
+    </div>
+  </div>  
+
+  <br><br>
+
+
+</body>
+</html>
