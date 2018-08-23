@@ -10,3 +10,6 @@ http://jsonschema.net/
 create json
 https://mb21.github.io/JSONedit/
 
+random api
+===========
+https://randomuser.me/api/
