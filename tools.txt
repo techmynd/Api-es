@@ -13,3 +13,9 @@ https://mb21.github.io/JSONedit/
 random api
 ===========
 https://randomuser.me/api/
+
+
+
+https://www.browserling.com/tools/remove-all-whitespace 
+https://jsonlint.com/
+http://myjson.com
