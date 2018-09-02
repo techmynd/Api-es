@@ -2,6 +2,7 @@ https://any-api.com/
 https://en.wikipedia.org/wiki/List_of_open_APIs
 https://www.quora.com/Where-can-I-find-Free-Public-REST-APIs-preferably-JSON
 https://www.computersciencezone.org/50-most-useful-apis-for-developers/
+
 https://github.com/toddmotto/public-apis#cryptocurrency
 
 https://www.programmableweb.com/apis/directory

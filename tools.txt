@@ -19,3 +19,9 @@ https://randomuser.me/api/
 https://www.browserling.com/tools/remove-all-whitespace 
 https://jsonlint.com/
 http://myjson.com
+
+
+https://api.chucknorris.io/jokes/random
+https://developer.chrome.com/devtools
+https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX
+
