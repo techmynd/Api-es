@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AJAX jQuery</title>
+
+</head>
+
+<body>
+    <p>Basic Syntax</p>
+    <div id="output"></div>
+    <button id="trigger">Click Here & see console</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $('#trigger').click(function(){
+            webData();
+        });
+
+        function webData() {
+            $.ajax({
+                method:'GET',
+                url:'http://jsonplaceholder.typicode.com/posts/1',
+                dataType:'json'
+            })
+            /*
+            .done(function(){
+                output();
+            });
+            */
+            .done(output)
+            .fail(failed)
+            .always(always);
+        }
+
+        function output(data) {
+            console.log(data);
+            $('#output').html('<h2>'+data.title+'</h2><p>'+data.body+'</p>')
+        }
+
+        function failed() {
+            console.log("failed");
+        }
+
+        function always() {
+            console.log("okay");
+        }
+        
+    </script>
+</body>
+
+</html>
