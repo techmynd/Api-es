@@ -26,31 +26,27 @@
       "id": 4
     },
     {
-      "first": "John",
-      "last": "Jason",
-      "company": "Whatever",
-      "another": "helloworld",
+      "first": "Jason",
+      "last": "Tester",
+      "company": "ACME",
       "id": 5
     },
     {
-      "first": "John",
-      "last": "Jason",
-      "company": "Whatever",
-      "another": "helloworld",
+      "first": "Jason",
+      "last": "Tester",
+      "company": "ACME",
       "id": 6
     },
     {
-      "first": "John",
-      "last": "Jason",
-      "company": "Whatever",
-      "another": "helloworld",
+      "first": "Jason",
+      "last": "Tester",
+      "company": "ACME",
       "id": 7
     },
     {
-      "first": "John",
-      "last": "Jason",
-      "company": "Whatever",
-      "another": "helloworld",
+      "first": "Jason",
+      "last": "Tester",
+      "company": "ACME",
       "id": 8
     }
   ],

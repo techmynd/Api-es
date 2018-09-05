@@ -16,3 +16,10 @@ Resources
   Home
   http://localhost:3000
 
+==============================
+
+examples in this folder need json server to run on localhost and u should have a db.json file as json database
+use command
+json-server db.json
+
+
