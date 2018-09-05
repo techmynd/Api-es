@@ -1,0 +1,17 @@
+create google sheet
+file > publish to the web (link & webpage)
+
+https://docs.google.com/spreadsheets/d/e/2PACX-1vTs_NpdwcPhA2LOviMhwzDzGTPwxV_PyreUE6wtEz7xMVSLyZvQv_YX54hyQT_nrwwohYPhHhHa4_s1/pubhtml
+
+sheet
+=====
+https://docs.google.com/spreadsheets/d/1iOQpkxIgL7sMUqs_XedlbAGA_YTmR1JZkV6NG_wHDGs/edit#gid=0
+
+Sheet ID
+========
+1iOQpkxIgL7sMUqs_XedlbAGA_YTmR1JZkV6NG_wHDGs
+
+https://spreadsheets.google.com/feeds/list/YOURID/od6/public/values?alt=json
+
+https://spreadsheets.google.com/feeds/list/1iOQpkxIgL7sMUqs_XedlbAGA_YTmR1JZkV6NG_wHDGs/od6/public/values?alt=json
+
