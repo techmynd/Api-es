@@ -1,0 +1,3 @@
+correct way to store an object in a localStorage
+
+localStorage.setItem(‘testObject’, JSON.stringify(testObject))
