@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AJAX</title>
+</head>
+<body>
+
+<div>
+    <input type="text" name="url" value="https://reqres.in/api/users/2">
+</div>
+
+<div>
+    <input type="button" name="sender" value="GO">
+</div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event){
+        
+        // document.querySelector("input[name='sender']").addEventListener('click', function(){
+        //     makeRequest();
+        // });
+
+        // or
+        document.querySelector("input[name='sender']").addEventListener('click',makeRequest);
+
+    });
+
+    function makeRequest() {
+        console.log("it worked...");
+    }
+    
+</script>
+        
+</body>
+</html>
