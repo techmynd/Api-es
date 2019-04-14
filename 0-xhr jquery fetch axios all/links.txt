@@ -1,0 +1,23 @@
+fetch
+https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+https://davidwalsh.name/fetch
+
+axios
+https://github.com/axios/axios
+
+jQuery Ajax
+http://api.jquery.com/jquery.ajax/
+https://stackoverflow.com/questions/3258645/pass-request-headers-in-a-jquery-ajax-get-call
+
+XMLHttpRequest
+https://xhr.spec.whatwg.org/
+https://www.w3.org/TR/XMLHttpRequest/
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+
+https://classroom.udacity.com/courses/ud109/
+
+
+
+
+

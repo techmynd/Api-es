@@ -1,0 +1,14 @@
+Getting Data from unsplash > single image
+Getting articles from nytimes > 10 artilces 
+
+by using
+
+xhr
+jqury ajax
+fetch
+axios
+
+- xhr was old
+- after that was jquery ajax but thats using xhr in background
+- fetch is browser based and dont need any library but may need polyfill for older browsers
+- axios needs axios library and is cross browser compatible
